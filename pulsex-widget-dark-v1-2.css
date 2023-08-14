@@ -1,0 +1,110 @@
+.pulsex-widget {
+  border: 2px solid #4A90E2; /* Blue border */
+  padding: 15px;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #E0E0E0; /* Light text color */
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.content {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s; /* Smooth fade-in transition */
+}
+
+.token0-info {
+  display: flex;
+  align-items: center;
+}
+
+.token0-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.token0-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4A90E2; /* Blue color for emphasis */
+}
+
+.price-info {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4A90E2; /* Blue color for emphasis */
+}
+
+.price-change.positive {
+  color: green;
+}
+
+.price-change.negative {
+  color: red;
+}
+
+.denominator,
+.marketcap-info {
+  font-size: 14px;
+  color: #777;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker loading background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 6px solid #4A90E2; /* Blue spinner */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.marketcap-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.indicator-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.indicator-light.green { background-color: green; }
+.indicator-light.yellow { background-color: yellow; }
+
+#footer {
+  font-size: 10px;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#footer a {
+  color: #4A90E2; /* Blue link color */
+}
