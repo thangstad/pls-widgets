@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://testnet.pulsearb.money/katie/pulsex-widget-dark-v1-2.css"> <!-- CHANGE ME-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js" integrity="sha512-2oprd2T2vSkAii+dVWi6C+uATbQ1YGmCed6b6msb9Jxi33hsXAbnhwZ9thwCq6ndidZv4P51qaq58uo9b/x4nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://testnet.pulsearb.money/katie/pulsex-widget-v1-22.js"></script> <!-- CHANGE ME-->
+</head>
+<body>
+  <div id="pulsex-widget1"></div>
+  <div id="pulsex-widget2"></div>
+  <div id="pulsex-widget3"></div>
+  <div id="pulsex-widget4"></div>
+  <div id="pulsex-widget5"></div>
+  <script>
+    createPulsexWidget({
+      pool: '0xE56043671df55dE5CDf8459710433C10324DE0aE', 
+      decimals: 7,
+      inverted: false,
+      stableCoin: false,
+      containerId: 'pulsex-widget1'
+    });
+    createPulsexWidget({
+      pool: '0xB2893ceA8080bF43b7b60B589EDaAb5211D98F23', 
+      decimals: 7,
+      inverted: false,
+      stableCoin: false,
+      containerId: 'pulsex-widget2'
+    });
+    createPulsexWidget({
+      pool: '0x4F0e991e170Aa644763Cb68ecc945Bdf957473eE', 
+      decimals: 7,
+      inverted: false,
+      stableCoin: false,
+      containerId: 'pulsex-widget3'
+    });
+    createPulsexWidget({
+      pool: '0x6F1747370B1CAcb911ad6D4477b718633DB328c8', 
+      decimals: 7,
+      inverted: false,
+      stableCoin: false,
+      containerId: 'pulsex-widget4'
+    });
+    createPulsexWidget({
+      pool: '0xb10116FF560690EcE29c525C3596CC8F55a29B2C', 
+      decimals: 7,
+      inverted: false,
+      stableCoin: false,
+      containerId: 'pulsex-widget5'
+    });
+  </script>
+</body>
+</html>
